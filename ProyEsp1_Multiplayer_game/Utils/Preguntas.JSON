@@ -1,0 +1,93 @@
+[
+    {
+      "Pregunta": "¿Cuál es el nombre del mapa principal de League of Legends?",
+      "Respuestas": {
+        "a": "Crystal Scar",
+        "b": "Summoner's Rift",
+        "c": "Twisted Treeline"
+      },
+      "Respuesta correcta": "b"
+    },
+    {
+      "Pregunta": "¿Cuál de estos campeones es conocido por ser un poderoso mago de hielo?",
+      "Respuestas": {
+        "a": "Lee Sin",
+        "b": "Brand",
+        "c": "Lissandra"
+      },
+      "Respuesta correcta": "c"
+    },
+    {
+      "Pregunta": "¿Qué equipo ganó el Campeonato Mundial de League of Legends en 2019?",
+      "Respuestas": {
+        "a": "SK Telecom T1",
+        "b": "FunPlus Phoenix",
+        "c": "G2 Esports"
+      },
+      "Respuesta correcta": "b"
+    },
+    {
+      "Pregunta": "¿Cuál de estos campeones es un tirador conocido por ser un arma viviente?",
+      "Respuestas": {
+        "a": "Garen",
+        "b": "Twitch",
+        "c": "Malphite"
+      },
+      "Respuesta correcta": "b"
+    },
+    {
+      "Pregunta": "¿Qué tipo de monstruo se encuentra en la jungla y otorga un potente buff temporal al equipo que lo derrota?",
+      "Respuestas": {
+        "a": "Lobo Alfa",
+        "b": "Dragón",
+        "c": "Heraldo de la Grieta"
+      },
+      "Respuesta correcta": "b"
+    },
+    {
+      "Pregunta": "¿Quién es conocido como el \"Rey Demonio\" en el universo de League of Legends?",
+      "Respuestas": {
+        "a": "Teemo",
+        "b": "Swain",
+        "c": "Viego"
+      },
+      "Respuesta correcta": "c"
+    },
+    {
+      "Pregunta": "¿Cuál es el nombre del evento anual en League of Legends que celebra el inicio de la temporada clasificatoria?",
+      "Respuestas": {
+        "a": "Fiesta de la Cosecha",
+        "b": "Mundiales",
+        "c": "El inicio de la Pretemporada"
+      },
+      "Respuesta correcta": "c"
+    },
+    {
+      "Pregunta": "¿Cuál de estos campeones es conocido por ser un ágil asesino con habilidades de teletransporte?",
+      "Respuestas": {
+        "a": "Annie",
+        "b": "Katarina",
+        "c": "Sion"
+      },
+      "Respuesta correcta": "b"
+    },
+    {
+      "Pregunta": "¿Cuál es el nombre del evento anual en League of Legends que presenta skins y contenido temático limitado?",
+      "Respuestas": {
+        "a": "Festival de año nuevo chino",
+        "b": "Fiesta de la Cosecha",
+        "c": "Fiesta del Invocador"
+      },
+      "Respuesta correcta": "a"
+    },
+    {
+      "Pregunta": "¿Cuál de estos campeones es conocido por ser un poderoso mago que controla el tiempo?",
+      "Respuestas": {
+        "a": "Zed",
+        "b": "Ekko",
+        "c": "Orianna"
+      },
+      "Respuesta correcta": "b"
+    }
+  ]
+  
