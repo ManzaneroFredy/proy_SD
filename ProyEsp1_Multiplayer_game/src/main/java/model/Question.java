@@ -4,6 +4,7 @@
  */
 package model;
 
+
 import java.util.ArrayList;
 
 /**
@@ -14,6 +15,15 @@ public class Question {
     private String description;
     private ArrayList<String> answers;
     private String correctAnswer;
+
+    public Question(String description, ArrayList<String> answers, String correctAnswer) {
+        this.description = description;
+        this.answers = answers;
+        this.correctAnswer = correctAnswer;
+    }
+
+   
+    
 
     public String getDescription() {
         return description;
@@ -34,6 +44,7 @@ public class Question {
     public void setCorrectAnswer(String correctAnswer) {
         this.correctAnswer = correctAnswer;
     }
+    
     
     
 }

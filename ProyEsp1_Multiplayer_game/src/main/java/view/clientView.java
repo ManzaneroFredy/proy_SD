@@ -4,16 +4,18 @@
  */
 package view;
 
+import javax.swing.JPanel;
+
 /**
  *
  * @author PC-Fredy
  */
-public class clientView extends javax.swing.JFrame {
+public class ClientView extends javax.swing.JFrame {
 
     /**
      * Creates new form clientView
      */
-    public clientView() {
+    public ClientView() {
         initComponents();
     }
 
@@ -25,92 +27,32 @@ public class clientView extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
         mainPanel = new javax.swing.JPanel();
-        panelQuestions = new javax.swing.JPanel();
-        usernamePanel = new view.components.RoundedBorders();
-        usernameLabel = new javax.swing.JLabel();
-        txtUsername = new javax.swing.JTextField();
-        btnUsername = new javax.swing.JButton();
+        usernameView1 = new view.UsernameView();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 15, 8));
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setResizable(false);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        mainPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        mainPanel.setBackground(new java.awt.Color(0, 15, 8));
+        mainPanel.setForeground(new java.awt.Color(0, 15, 8));
+        mainPanel.add(usernameView1);
 
-        panelQuestions.setBackground(new java.awt.Color(0, 15, 8));
-        mainPanel.add(panelQuestions, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 700));
-
-        usernamePanel.setBackground(new java.awt.Color(180, 207, 176));
-        usernamePanel.setMaximumSize(new java.awt.Dimension(800, 300));
-        usernamePanel.setMinimumSize(new java.awt.Dimension(800, 300));
-        java.awt.GridBagLayout usernamePanelLayout = new java.awt.GridBagLayout();
-        usernamePanelLayout.columnWidths = new int[] {3};
-        usernamePanel.setLayout(usernamePanelLayout);
-
-        usernameLabel.setBackground(new java.awt.Color(0, 15, 8));
-        usernameLabel.setFont(new java.awt.Font("Segoe UI Symbol", 0, 36)); // NOI18N
-        usernameLabel.setForeground(new java.awt.Color(0, 15, 8));
-        usernameLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        usernameLabel.setText("Ingrese su nombre de usuario.");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridheight = 2;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 4, 0);
-        usernamePanel.add(usernameLabel, gridBagConstraints);
-
-        txtUsername.setBackground(new java.awt.Color(255, 255, 255));
-        txtUsername.setFont(new java.awt.Font("Segoe UI Symbol", 0, 12)); // NOI18N
-        txtUsername.setForeground(new java.awt.Color(0, 15, 8));
-        txtUsername.setOpaque(true);
-        txtUsername.setPreferredSize(new java.awt.Dimension(300, 30));
-        txtUsername.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtUsernameActionPerformed(evt);
-            }
-        });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.insets = new java.awt.Insets(0, 0, 11, 0);
-        usernamePanel.add(txtUsername, gridBagConstraints);
-
-        btnUsername.setBackground(new java.awt.Color(249, 180, 237));
-        btnUsername.setForeground(new java.awt.Color(255, 255, 255));
-        btnUsername.setText("Aceptar");
-        btnUsername.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnUsername.setBorderPainted(false);
-        btnUsername.setOpaque(true);
-        btnUsername.setPreferredSize(new java.awt.Dimension(100, 30));
-        btnUsername.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUsernameActionPerformed(evt);
-            }
-        });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 4;
-        usernamePanel.add(btnUsername, gridBagConstraints);
-
-        mainPanel.add(usernamePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 800, 300));
-
-        getContentPane().add(mainPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 700));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsernameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtUsernameActionPerformed
-
-    private void btnUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsernameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnUsernameActionPerformed
 
     /**
      * @param args the command line arguments
@@ -129,30 +71,42 @@ public class clientView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(clientView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ClientView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(clientView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ClientView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(clientView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ClientView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(clientView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ClientView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new clientView().setVisible(true);
+                new ClientView().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnUsername;
     private javax.swing.JPanel mainPanel;
-    private javax.swing.JPanel panelQuestions;
-    private javax.swing.JTextField txtUsername;
-    private javax.swing.JLabel usernameLabel;
-    private view.components.RoundedBorders usernamePanel;
+    private view.UsernameView usernameView1;
     // End of variables declaration//GEN-END:variables
+
+    public JPanel getMainPanel() {
+        return mainPanel;
+    }
+
+    public void setMainPanel(JPanel mainPanel) {
+        this.mainPanel = mainPanel;
+    }
+
+    public UsernameView getUsernameView1() {
+        return usernameView1;
+    }
+
+    
+    
 }

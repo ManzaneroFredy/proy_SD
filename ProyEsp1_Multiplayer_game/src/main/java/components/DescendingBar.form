@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form version="4.0" xmlns="http://www.oracle.com/jforms/formbuilder/version/4.0">
+  <Properties>
+    <Property name="component" type="java.lang.String" value="descendingBar"/>
+  </Properties>
+  <Events>
+    <EventHandler event="propertyChange" listener="descendingBar" parameters="property java.beans.PropertyChangeEvent"/>
+  </Events>
+</Form>
