@@ -28,8 +28,7 @@ public class clientView extends javax.swing.JFrame {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
         mainPanel = new javax.swing.JPanel();
-        usernamePanel = new view.components.RoundedBorders();
-        jLabel1 = new javax.swing.JLabel();
+        descendingBar1 = new components.DescendingBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 15, 8));
@@ -43,20 +42,7 @@ public class clientView extends javax.swing.JFrame {
 
         mainPanel.setOpaque(false);
         mainPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        usernamePanel.setBackground(new java.awt.Color(180, 207, 176));
-        usernamePanel.setMaximumSize(new java.awt.Dimension(800, 300));
-        usernamePanel.setMinimumSize(new java.awt.Dimension(800, 300));
-        usernamePanel.setLayout(new java.awt.GridBagLayout());
-
-        jLabel1.setBackground(new java.awt.Color(0, 15, 8));
-        jLabel1.setFont(new java.awt.Font("Segoe UI Symbol", 0, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 15, 8));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Ingrese su nombre de usuario");
-        usernamePanel.add(jLabel1, new java.awt.GridBagConstraints());
-
-        mainPanel.add(usernamePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 800, 300));
+        mainPanel.add(descendingBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, -1, -1));
 
         jLayeredPane1.add(mainPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 700));
 
@@ -101,9 +87,8 @@ public class clientView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private components.DescendingBar descendingBar1;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel mainPanel;
-    private view.components.RoundedBorders usernamePanel;
     // End of variables declaration//GEN-END:variables
 }
