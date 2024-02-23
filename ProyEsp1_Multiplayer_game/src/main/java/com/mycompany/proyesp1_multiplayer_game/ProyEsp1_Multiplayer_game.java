@@ -6,7 +6,7 @@ package com.mycompany.proyesp1_multiplayer_game;
 
 import controller.ClientViewController;
 import java.io.IOException;
-import view.ClientView;
+import view.clientView;
 
 /**
  *
@@ -15,7 +15,7 @@ import view.ClientView;
 public class ProyEsp1_Multiplayer_game {
 
     public static void main(String[] args) throws IOException {
-        ClientView cv = new ClientView();
+        clientView cv = new clientView();
         ClientViewController cvc = new ClientViewController(cv);
     }
 }

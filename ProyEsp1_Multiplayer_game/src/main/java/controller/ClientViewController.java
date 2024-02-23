@@ -18,7 +18,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JPanel;
 import model.Question;
-import view.ClientView;
+import view.clientView;
 import view.QuestionsView;
 
 /**
@@ -26,13 +26,13 @@ import view.QuestionsView;
  * @author PC-Fredy
  */
 public class ClientViewController implements MouseListener{
-    private ClientView clientV;
+    private clientView clientV;
     private ArrayList<Question> questions;
     private QuestionsView qv = new QuestionsView();
     int questionIndex = 0;
     
 
-    public ClientViewController(ClientView clientV) throws IOException {
+    public ClientViewController(clientView clientV) throws IOException {
         this.clientV = clientV;
         this.questions = initializedQuestions(getQuestionsFromJson());
         this.clientV.getUsernameView1().getBtnUsername().addMouseListener(this);
@@ -51,13 +51,14 @@ public class ClientViewController implements MouseListener{
     
     private JsonArray getQuestionsFromJson() throws IOException{
         JsonArray questions = null;
-        String filePath = "C:\\Archivos\\Semestre 8\\Sistemas-Distribuidos\\Proyecto\\ProyEsp1_Multiplayer_game\\src\\main\\java\\utils\\Preguntas.JSON";
+        String filePath = "C:\\Users\\A16001581\\Desktop\\ProyectoSD\\proy_SD\\ProyEsp1_Multiplayer_game\\src\\main\\java\\utils\\Preguntas.JSON";
         String questionJson = new String(Files.readAllBytes(Paths.get(filePath)));
     
         JsonElement jsonElement = JsonParser.parseString(questionJson);
     
         if(jsonElement.isJsonArray()){
             questions = jsonElement.getAsJsonArray();
+            
         }
         
         return questions;

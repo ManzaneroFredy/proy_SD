@@ -17,11 +17,6 @@ public class Player {
     private String playerName;
 
     /**
-     * Server's address
-     */
-    private String server;
-
-    /**
      * Player's score
      */
     private int score;
@@ -30,11 +25,9 @@ public class Player {
      * Constructor
      * 
      * @param playerName Player's name
-     * @param server Server's address
      */
-    public Player(String playerName, String server) {
+    public Player(String playerName) {
         this.playerName = playerName;
-        this.server = server;
         this.score = 0;
     }
 
@@ -56,23 +49,7 @@ public class Player {
         this.playerName = playerName;
     }
 
-    /**
-     * Gets the server's address
-     * 
-     * @return Server's address
-     */
-    public String getServer() {
-        return server;
-    }
 
-    /**
-     * Sets the server's address
-     * 
-     * @param server Server's address
-     */
-    public void setServer(String server) {
-        this.server = server;
-    }
 
     /**
      * Gets the player's score
